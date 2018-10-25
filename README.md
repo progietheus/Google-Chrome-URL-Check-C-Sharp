@@ -1,6 +1,6 @@
 # Google-Chrome-URL-Check-C-Sharp
 
-## Check all open instances of Google Chrome on a machine for a specified URL.
+## Check all open instances of Google Chrome on a machine for a specified URL (C#)
 
 After trying to manually traverse the AutomationElements trees to find the URL as presented in other [solutions found online](https://stackoverflow.com/questions/18897070/getting-the-current-tabs-url-from-google-chrome-using-c-sharp), I came up with a function to search the root AutomationElement beginning at the browser for the encasing ControlType of "edit", which contains the URL we are looking for. 
 ```c#
