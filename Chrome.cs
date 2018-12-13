@@ -119,7 +119,7 @@ namespace LinkLimiter
             AutomationElement elementNode = walker.GetFirstChild(rootElement);
             while (elementNode != null)
             {
-                if (elementNode.Current.ControlType.LocalizedControlType == "edit")
+                if (elementNode.Current.ControlType.ProgrammaticName == "ControlType.Edit")
                     ret.Add(elementNode);
                 GetEditElement(elementNode, ret);
                 elementNode = walker.GetNextSibling(elementNode);
