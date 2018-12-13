@@ -27,7 +27,7 @@ AutomationElement elmUrlBar = GetEditElement(elm1, ret)[0];
 
 Then retrieve the URL 
 ```c#
-var result = ((ValuePattern)elmUrlBar.GetCurrentPattern(patterns[0])).Current.Value;
+var result = ((ValuePattern)elmUrlBar.GetCurrentPattern(ValuePattern.Pattern)).Current.Value;
 ```
 
 ## References needed
