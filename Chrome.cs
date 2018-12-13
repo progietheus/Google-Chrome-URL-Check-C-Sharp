@@ -6,10 +6,8 @@ using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Automation;
 using System.Windows.Forms;
-using static System.Windows.Automation.AutomationElement;
 
 namespace LinkLimiter
 {
