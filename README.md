@@ -27,7 +27,10 @@ AutomationElement elmUrlBar = GetEditElement(elm1, ret)[0];
 
 Then retrieve the URL 
 ```c#
-var result = ((ValuePattern)elmUrlBar.GetCurrentPattern(patterns[0])).Current.Value;
+var result = ((ValuePattern)elmUrlBar.GetCurrentPattern(ValuePattern.Pattern)).Current.Value;
 ```
+
+## References needed
+Add the following DLLs to your project to fix compile errors: UIAutomationClient and UIAutomationTypes.
 
 Hopefully some of you will find this useful.

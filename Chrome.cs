@@ -6,10 +6,8 @@ using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Automation;
 using System.Windows.Forms;
-using static System.Windows.Automation.AutomationElement;
 
 namespace LinkLimiter
 {
@@ -119,7 +117,7 @@ namespace LinkLimiter
             AutomationElement elementNode = walker.GetFirstChild(rootElement);
             while (elementNode != null)
             {
-                if (elementNode.Current.ControlType.LocalizedControlType == "edit")
+                if (elementNode.Current.ControlType.ProgrammaticName == "ControlType.Edit")
                     ret.Add(elementNode);
                 GetEditElement(elementNode, ret);
                 elementNode = walker.GetNextSibling(elementNode);
